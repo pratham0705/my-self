@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#minicircle{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: aliceblue;
+    z-index: 999999;
+}
+
+#main{
+    width: 100%;
+}
+
+#first_pg{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     width: 100%;
+    padding: 10px 30px;
+    /* position: fixed; */
+}
+
+#nav a{
+    text-decoration: none;
+}
+
+#heading{
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+#heading h1{
+    opacity: .6;
+    margin-left: 30px;
+    font-weight: 900;
+    line-height: 1;
+    font-size: 9vw;
+    margin-left: 160px;
+    
+}
+
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
+
+#heading :nth-child(2){
+    margin-left: 250px;
+}
+
+.blocktext{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: fit-content;
+}
+
+.blocktext h4{
+    text-align: right;
+    opacity: .8;
+}
+
+#heading h1:hover{
+    opacity: 1;
+}
+
+#smalltxt{
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: 50px;
+    margin-right: 30px;
+    opacity: .8;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#firstfooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+    height: 50%;
+}
+
+#firstfooter a{
+    text-decoration: none;
+}
+
+#firstfooter .iconset{
+    display: flex;
+    gap: 10px;
+}
+
+#firstfooter .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#second_pg{
+    padding-top: 200px;
+    padding-right: 10vw;
+    padding-left: 2vw;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+.elem{
+    width: 100;
+    padding-top: 3vw;
+    padding-left: 4vw;
+    padding-bottom: 3vw;
+    border-top: 1px solid #888;
+    font-size: 2svw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: .9;
+    position: relative;
+}
+
+.elem .set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#elemlast{
+    border-bottom: 1px solid #888
+}
+
+.elem img{
+    position: absolute;
+    z-index: 999;
+    height: 130%;
+    width: 25%;
+    opacity: 0;;
+}
+
+#about{
+    padding: 10vw 5vw;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#about img{
+    width: 12vw;
+    border: #888;
+    border-radius: 50%;
+}
+
+#about #textabt{
+    width: 20rem;
+    padding-top: 2vw;
+
+}
+
+#textabt h5{
+    margin-bottom: 10px;
+    opacity: .7;
+    text-transform: uppercase;
+}
+
+#textabt p{
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+#textabt a{
+    padding: 10px 10px;
+    text-decoration: none;
+    background-color: rgb(169, 190, 169);
+    border: 1px solid #888;
+    border-radius: 100px;
+}
+
+#textabt a:hover{
+    color: black;
+}
+
+#skills{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    z-index: 9;
+    position: relative;
+    font-size: 2vw;
+    padding: 4vw 4vw;
+}
+
+#skills #h2{
+    opacity: .6;
+    text-align: center;
+    font-size: 70px;
+    text-decoration: underline;
+}
+
+#skills #h2:hover{
+    opacity: 1;
+}
+
+.textdiv{
+    height: 110px;
+    overflow: hidden;
+    width: fit-content;
+    padding: 40px;
+    
+}
+
+.box img{
+    width: 15%;
+    opacity: 0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(2deg);
+    padding: 2vw;
+}
+
+.box h1{
+    transition: all ease-out 0.5s;
+}
+
+.box:hover img{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg)
+}
+
+.box:hover h1{
+    transform: translateY(-160%);
+}
+
+#skills .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainfooter{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 2vw;
+}
+
+#mainfooter .footerright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#mainfooter a{
+    text-decoration: none;
+}
